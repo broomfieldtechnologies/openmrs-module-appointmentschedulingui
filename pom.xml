@@ -33,8 +33,9 @@
     </modules>
 
     <properties>
-        <openMRSVersion>1.10.4</openMRSVersion>
-        <emrapiVersion>1.18</emrapiVersion>
+        <openMRSVersion>2.3.0</openMRSVersion>
+		<emrapiVersion>1.29.0-SNAPSHOT</emrapiVersion>
+		<metadatamappingVersion>1.3.4</metadatamappingVersion>
         <uiframeworkVersion>3.9</uiframeworkVersion>
         <appframeworkVersion>2.9</appframeworkVersion>
         <htmlformentryVersion>3.3.0</htmlformentryVersion>
@@ -89,7 +90,12 @@
              <version>${htmlformentryVersion}</version>
              <scope>provided</scope>
          </dependency>
-
+		 <dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>metadatamapping-api</artifactId>
+			<version>${metadatamappingVersion}</version>
+			<scope>provided</scope>
+		</dependency>
          <dependency>
              <groupId>org.openmrs.module</groupId>
              <artifactId>htmlformentry-api</artifactId>
