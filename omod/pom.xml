@@ -216,6 +216,7 @@
                 </executions>
             </plugin>
 
+<!--
             <plugin>
                 <groupId>de.saumya.mojo</groupId>
                 <artifactId>gem-maven-plugin</artifactId>
@@ -233,6 +234,7 @@
                     <execArgs>${gem.home}/bin/compass compile ${basedir}/src/main/compass</execArgs>
                 </configuration>
             </plugin>
+-->
 
             <plugin>
                 <groupId>com.github.klieber</groupId>
@@ -376,6 +378,7 @@
             <id>watch-sass</id>
             <build>
                 <plugins>
+<!--
                     <plugin>
                         <groupId>de.saumya.mojo</groupId>
                         <artifactId>gem-maven-plugin</artifactId>
@@ -393,6 +396,7 @@
                             <execArgs>${gem.home}/bin/compass watch ${basedir}/src/main/compass</execArgs>
                         </configuration>
                     </plugin>
+-->
                 </plugins>
             </build>
         </profile>
